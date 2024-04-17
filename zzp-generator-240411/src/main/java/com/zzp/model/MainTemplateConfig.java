@@ -8,9 +8,12 @@ package com.zzp.model;
  * @Description:
  */
 
+import lombok.Data;
+
 /**
  * 动态模板配置
  */
+@Data
 public class MainTemplateConfig {
 
     /**
@@ -21,12 +24,34 @@ public class MainTemplateConfig {
     /**
      * 作者注释
      */
-    private String author = "zzp";
+    private String author = " zzp";
 
     /**
      * 输出信息
      */
     private String outputText = "sum = ";
 
-
+//    public boolean isLoop() {
+//        return loop;
+//    }
+//
+//    public String getAuthor() {
+//        return author;
+//    }
+//
+//    public String getOutputText() {
+//        return outputText;
+//    }
+//
+//    public void setLoop(boolean loop) {
+//        this.loop = loop;
+//    }
+//
+//    public void setAuthor(String author) {
+//        this.author = author;
+//    }
+//
+//    public void setOutputText(String outputText) {
+//        this.outputText = outputText;
+//    }
 }
