@@ -1,6 +1,7 @@
 package com.zzp.cli.example;
 
 import org.apache.commons.collections4.sequence.DeleteCommand;
+import org.junit.jupiter.api.Test;
 import picocli.CommandLine;
 
 /**
@@ -52,13 +53,3 @@ static class DeleteCommand implements Runnable {
     }
 
 }
-//抽象类实现接口
-//abstract class zzp implements zzp946{
-//    public void zzp(){
-//        System.out.println("zzp946");
-//    }
-//}
-//
-//interface zzp946 {
-//    void zzp();
-//}

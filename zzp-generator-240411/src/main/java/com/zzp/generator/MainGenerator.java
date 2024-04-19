@@ -23,6 +23,9 @@ public class MainGenerator {
     public static void doGenerate(Object model) throws TemplateException, IOException {
         String projectDir = System.getProperty("user.dir");
         //整个目录的根路径
+          //解决jar包目录的根路径的问题
+//        File parentFile = new File(projectDir).getParentFile();
+
         File parentFile = new File(projectDir);
         System.out.println("整个目录的根路径");
         System.out.println(parentFile);
@@ -34,8 +37,16 @@ public class MainGenerator {
         //生成静态文件
         StaticGenerator.copyFilesByRecursive(inputPath, outputPath);
         //生成动态文件
+          //解决jar包目录的根路径的问题
+//        String inputDynamicFilePath = projectDir+File.separator+"src/main/resources/templates/MainTemplate.java.ftl";
+//        System.out.println("动态文件输入路径"+inputDynamicFilePath);
+//        String outputDynamicFilePath = outputPath+File.separator+"acm-template/src/com/zzp/acm/MainTemplate.java";
+//        System.out.println("动态文件输出路径"+outputDynamicFilePath);
+
         String inputDynamicFilePath = projectDir+File.separator+"zzp-generator-240411/src/main/resources/templates/MainTemplate.java.ftl";
+        System.out.println("动态文件输入路径"+inputDynamicFilePath);
         String outputDynamicFilePath = outputPath+File.separator+"zzp-generator-240411/acm-template/src/com/zzp/acm/MainTemplate.java";
+        System.out.println("动态文件输出路径"+outputDynamicFilePath);
         DynamicGenerator.doGenerate(inputDynamicFilePath, outputDynamicFilePath, model);
     }
 

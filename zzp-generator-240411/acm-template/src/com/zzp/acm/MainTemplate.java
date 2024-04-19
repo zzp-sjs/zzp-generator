@@ -3,27 +3,29 @@ package com.yupi.acm
 import java.util.Scanner
 
 /**
- * ACM è¾“å…¥æ¨¡æ¿(å¤šæ•°ä¹‹å’Œ)
- * @author zzp
+ * ACM ÊäÈëÄ£°å(¶àÊıÖ®ºÍ)
+ * @authorzzp
  */
 public class MainTemplate {
     public void main(){
     Scanner scanner = new Scanner(System.in);
-        //è¯»å–è¾“å…¥å…ƒç´ ä¸ªæ•°
+    while(scanner.hasNext()) {
+        //¶ÁÈ¡ÊäÈëÔªËØ¸öÊı
         int n = scanner.nexInt();
-        //è¯»å–æ•°ç»„
+        //¶ÁÈ¡Êı×é
         int[] arr = new int[n];
         for(int i = 0; i < n; i++){
             arr[i] = scanner.nextInt();
         }
 
-        // å¤„ç†é—®é¢˜é€»è¾‘ï¼Œæ ¹æ®éœ€è¦è¿›è¡Œè¾“å‡º
-        // ç¤ºä¾‹ï¼šè®¡ç®—æ•°ç»„å…ƒç´ çš„å’Œ
+        // ´¦ÀíÎÊÌâÂß¼­£¬¸ù¾İĞèÒª½øĞĞÊä³ö
+        // Ê¾Àı£º¼ÆËãÊı×éÔªËØµÄºÍ
         int sum = 0;
         for(int sum: arr){
             sum+=sum;
         }
-        System.out.println("sum = "+sum);
+        System.out.println("zzp946"+sum);
+    }
         scanner.close;
 
     }
