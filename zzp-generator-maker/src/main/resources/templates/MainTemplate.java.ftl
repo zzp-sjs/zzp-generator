@@ -19,6 +19,7 @@ public class MainTemplate {
         for(int i = 0; i < n; i++){
             arr[i] = scanner.nextInt();
         }
+
         // 处理问题逻辑，根据需要进行输出
         // 示例：计算数组元素的和
         int sum = 0;
