@@ -41,11 +41,11 @@ public class DynamicFileGenerator {
         //设置数字格式
         configuration.setNumberFormat("0.######");
 
-        //创建数据类型
-        DataModel dataModel = new DataModel();
-        dataModel.setAuthor("zzp");
-        dataModel.setLoop(false);
-        dataModel.setOutputText("求和结果：");
+//        //创建数据类型
+//        DataModel dataModel = new DataModel();
+//        dataModel.setAuthor("zzp");
+//        dataModel.setLoop(false);
+//        dataModel.setOutputText("求和结果：");
 
         // 文件不存在则创建文件和父目录
         if (!FileUtil.exist(outputPath)) {

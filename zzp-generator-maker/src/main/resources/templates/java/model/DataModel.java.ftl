@@ -7,12 +7,12 @@ import lombok.Data;
  */
 @Data
 public class DataModel {
-<#list modelConfigDTO.modelConfig.model as modelInfo>
+<#list modelConfig.models as modelInfo>
     <#if modelInfo.description??>
      /**
       *${modelInfo.description}
       */
     </#if>
-    private ${modelInfo.type} ${modelInfo.fieldName}<#if modelInfo.defauleValue??> = ${modelInfo.defaultValue?c}</#if>
+    private ${modelInfo.type} <#if modelInfo.fieldName??>  ${modelInfo.fieldName}</#if> <#if modelInfo.defaultValue??> = ${modelInfo.defaultValue?c}</#if>;
 </#list>
 }

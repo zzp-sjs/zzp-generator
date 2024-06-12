@@ -1,7 +1,7 @@
-package com.zzp.maker.cli.command;
+package com.zzp.cli.command;
 
 import cn.hutool.core.util.ReflectUtil;
-import com.zzp.maker.model.DataModel;
+import com.zzp.model.DataModel;
 import picocli.CommandLine;
 
 import java.lang.reflect.Field;
@@ -19,8 +19,6 @@ public class ConfigCommand implements Runnable{
     public void run() {
         //实现 config 命令的逻辑
         System.out.println("查看参数信息");
-
-
 
 //        // 获取要打印属性信息的类
 //        Class<?> myClass = MainTemplateConfig.class;

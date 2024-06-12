@@ -1,6 +1,6 @@
-package com.zzp.maker;
+package com.zzp;
 
-import com.zzp.maker.cli.CommandExecutor;
+import com.zzp.cli.CommandExecutor;
 
 public class Main {
     public static void main(String[] args) {

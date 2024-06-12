@@ -74,4 +74,12 @@ public class MainGenerator {
     outputPath = new File(outputRootPath, "READE.md").getAbsolutePath();
     StaticGenerator.copyFilesByHutool(inputPath, outputPath);
     }
+
+    public static void main(String[] args) throws TemplateException, IOException {
+        MainTemplateConfig mainTemplateConfig = new MainTemplateConfig();
+        mainTemplateConfig.setAuthor("zzp");
+        mainTemplateConfig.setLoop(false);
+        mainTemplateConfig.setOutputText("求和结果:");
+        doGenerate(mainTemplateConfig);
+    }
 }

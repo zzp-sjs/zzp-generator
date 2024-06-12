@@ -14,7 +14,7 @@ import lombok.Data;
  * 动态模板配置
  */
 @Data
-public class DataModel {
+public class   DataModel {
 
     /**
      *是否生成循环
