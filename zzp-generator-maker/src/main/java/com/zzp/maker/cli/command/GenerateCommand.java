@@ -1,6 +1,7 @@
 package com.zzp.maker.cli.command;
 
 import cn.hutool.core.bean.BeanUtil;
+import com.zzp.maker.generator.file.DynamicFileGenerator;
 import com.zzp.maker.generator.file.FileGenerator;
 import com.zzp.maker.model.DataModel;
 import lombok.Data;

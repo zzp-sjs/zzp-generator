@@ -17,11 +17,7 @@ import java.util.concurrent.Callable;
 @CommandLine.Command(name = "list", description = "查看文件列表", mixinStandardHelpOptions = true)
 public class ListCommand implements Runnable {
     public void run() {
-        String projectPath = System.getProperty("user.dir");
-        //整个项目的跟路径
-        File parentFile = new File(projectPath);
-        //输入路径
-        String inputPath = new File(parentFile, "zzp-generator-basic/acm-template").getAbsolutePath();
+        String inputPath = "C:/Users/26648/Desktop/马到成功/坚持不懈/zzp-generator/zzp-generator-demo-projects/acm-template-pro";
         List<File> files = FileUtil.loopFiles(inputPath);
         for (File file : files) {
             System.out.println(file);

@@ -1,7 +1,7 @@
-package com.zzp.maker.generator.file;
+package ${basePackage}.generator;
 
 import cn.hutool.core.io.FileUtil;
-import com.zzp.maker.model.DataModel;
+import ${basePackage}.model.DataModel;
 import freemarker.template.Configuration;
 import freemarker.template.Template;
 import freemarker.template.TemplateException;
@@ -18,7 +18,7 @@ import java.io.Writer;
  * @Date: 2024/04/17/上午9:12
  * @Description:
  */
-public class DynamicFileGenerator {
+public class DynamicGenerator {
 
 
     public static  void doGenerate(String inputPath, String outputPath, Object model) throws IOException, TemplateException {
@@ -39,7 +39,7 @@ public class DynamicFileGenerator {
         Template template = configuration.getTemplate(temolateName);
 
         //设置数字格式
-        configuration.setNumberFormat("0.# #####");
+        configuration.setNumberFormat("0.######");
 
 //        //创建数据类型
 //        DataModel dataModel = new DataModel();

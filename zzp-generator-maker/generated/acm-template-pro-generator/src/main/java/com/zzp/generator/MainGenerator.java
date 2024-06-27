@@ -1,4 +1,4 @@
-package ${basePackage}.generator;
+package com.zzp.generator;
 
 /**
  * Created with IntelliJ IDEA.
@@ -56,30 +56,23 @@ public class MainGenerator {
 //        doGenerate(mainTemplateConfig);
 
 
-    String inputRootPath = "${fileConfig.inputRootPath}";
-    String outputRootPath = "${fileConfig.outputRootPath}";
+    String inputRootPath = "C:/Users/26648/Desktop/马到成功/坚持不懈/zzp-generator/zzp-generator-demo-projects/acm-template-pro";
+    String outputRootPath = "generated";
 
     String inputPath;
     String outputPath;
-<#list fileConfig.files as fileInfo>
-    inputPath = new File(inputRootPath, "${fileInfo.inputPath}").getAbsolutePath();
-    outputPath = new File(outputRootPath, "${fileInfo.outputPath}").getAbsolutePath();
-    <#if fileInfo.generateType == "static">
+    inputPath = new File(inputRootPath, ".gitignore").getAbsolutePath();
+    outputPath = new File(outputRootPath, ".gitignore").getAbsolutePath();
         StaticGenerator.copyFilesByHutool(inputPath, outputPath);
-    <#else>
+    inputPath = new File(inputRootPath, "README.md").getAbsolutePath();
+    outputPath = new File(outputRootPath, "README.md").getAbsolutePath();
+        StaticGenerator.copyFilesByHutool(inputPath, outputPath);
+    inputPath = new File(inputRootPath, "src/main/java/com/zzp/acm/MainTemplate.java.ftl").getAbsolutePath();
+    outputPath = new File(outputRootPath, "src/com/zzp/acm/MainTemplate.java").getAbsolutePath();
         DynamicGenerator.doGenerate(inputPath, outputPath, model);
-    </#if>
-</#list>
 
 
 
-<#--    inputPath = new File(inputRootPath, ".gitignore").getAbsolutePath();-->
-<#--    outputPath = new File(outputRootPath, ".gitignore").getAbsolutePath();-->
-<#--    StaticGenerator.copyFilesByHutool(inputPath, outputPath);-->
-
-<#--    inputPath = new File(inputRootPath, "READE.md").getAbsolutePath();-->
-<#--    outputPath = new File(outputRootPath, "READE.md").getAbsolutePath();-->
-<#--    StaticGenerator.copyFilesByHutool(inputPath, outputPath);-->
     }
 
 

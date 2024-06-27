@@ -6,7 +6,7 @@
   "author": "zzp",
   "createTime": "2024-04-21",
   "fileConfig": {
-    "inputRootPath": ".source/acm-template-pro",
+    "inputRootPath": "C:/Users/26648/Desktop/马到成功/坚持不懈/zzp-generator/zzp-generator-demo-projects/acm-template-pro",
     "outputRootPath": "generated",
     "sourceRootPath": "C:/Users/26648/Desktop/马到成功/坚持不懈/zzp-generator/zzp-generator-demo-projects/acm-template-pro",
     "type": "dir",
@@ -41,27 +41,18 @@
         "abbr": "l"
       },
       {
-        "groupKey": "mainTemplate",
-        "groupName": "核心模板",
-        "type": "MainTemplate",
-        "description": "用于生成核心模板文件",
-        "condition": "loop",
-        "models": [
-          {
-            "fieldName": "author",
-            "type": "String",
-            "description": "作者注释",
-            "defaultValue": "zzp",
-            "abbr": "a"
-          },
-          {
-            "fieldName": "outputText",
-            "type": "String",
-            "description": "输出信息",
-            "defaultValue": "sum = ",
-            "abbr": "o"
-          }
-        ]
+        "fieldName": "author",
+        "type": "String",
+        "description": "作者注释",
+        "defaultValue": "zzp",
+        "abbr": "a"
+      },
+      {
+        "fieldName": "outputText",
+        "type": "String",
+        "description": "输出信息",
+        "defaultValue": "sum = ",
+        "abbr": "o"
       }
     ]
   }

@@ -1,4 +1,4 @@
-package ${basePackage}.generator;
+package com.zzp.generator;
 
 import cn.hutool.core.io.FileUtil;
 

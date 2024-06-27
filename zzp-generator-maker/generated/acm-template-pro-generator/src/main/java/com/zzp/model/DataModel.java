@@ -12,7 +12,11 @@ public class DataModel {
       */
     private boolean   loop  = false;
      /**
-      *用于生成核心模板文件
+      *作者注释
       */
-    private MainTemplate  ;
+    private String   author  = "zzp";
+     /**
+      *输出信息
+      */
+    private String   outputText  = "sum = ";
 }
