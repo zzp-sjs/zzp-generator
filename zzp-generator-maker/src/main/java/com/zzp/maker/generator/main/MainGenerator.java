@@ -102,7 +102,7 @@ public class MainGenerator {
 
         //封装脚本
         String shellOutputPath = outputPath + File.separator + "generator";
-        String jarName = String.format("%s-%s-jar-with-dependencise.jar", meta.getName(), meta.getVersion());
+        String jarName = String.format("%s-%s-jar-with-dependencies.jar", meta.getName(), meta.getVersion());
         String jarPath = "target/" + jarName;
         ScriptGenerator.doGenerator(shellOutputPath,jarPath);
 
