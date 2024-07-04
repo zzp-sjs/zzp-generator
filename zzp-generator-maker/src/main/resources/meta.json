@@ -6,9 +6,9 @@
   "author": "zzp",
   "createTime": "2024-04-21",
   "fileConfig": {
-    "inputRootPath": "C:/Users/26648/Desktop/马到成功/坚持不懈/zzp-generator/zzp-generator-demo-projects/acm-template-pro",
+    "inputRootPath": ".source/acm-template-pro",
     "outputRootPath": "generated",
-    "sourceRootPath": "C:/Users/26648/Desktop/马到成功/坚持不懈/zzp-generator/zzp-generator-demo-projects/acm-template-pro",
+    "sourceRootPath": "/Users/26648/Desktop/马到成功/坚持不懈/zzp-generator/zzp-generator-demo-projects/acm-template-pro",
     "type": "dir",
     "files": [
       {
