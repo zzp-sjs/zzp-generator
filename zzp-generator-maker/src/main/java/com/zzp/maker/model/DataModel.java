@@ -19,17 +19,17 @@ public class   DataModel {
     /**
      *是否生成循环
      */
-    private boolean loop;
+    public boolean loop;
 
     /**
      * 作者注释
      */
-    private String author = " zzp";
+    public String author = " zzp";
 
     /**
      * 输出信息
      */
-    private String outputText = "sum = ";
+    public String outputText = "sum = ";
 
 //    public boolean isLoop() {
 //        return loop;

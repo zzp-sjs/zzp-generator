@@ -1,7 +1,7 @@
 ###Custom Template
 #生成器目录
 .generated
-
+.temp
 .idea
 generated
 zzp-generator.iml

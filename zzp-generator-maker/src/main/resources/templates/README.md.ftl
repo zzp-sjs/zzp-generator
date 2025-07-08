@@ -15,7 +15,7 @@
 >generator <命令> <选项参数>
 
 示例命令：
-
+<#--
 >generator generated <#list modelConfig.models as modelInfo>-${modelInfo.abbr} </#list>
 
 ## 参数说明
@@ -28,3 +28,5 @@ ${modelInfo?index + 1})${modelInfo.fieldName}<br />
 缩写：${modelInfo.abbr}<br />
 
 </#list>
+
+-->

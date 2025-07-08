@@ -4,6 +4,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.opentest4j.FileInfo;
 
+import java.io.Serializable;
 import java.util.List;
 
 @NoArgsConstructor
@@ -21,7 +22,7 @@ public class Meta {
 
     @NoArgsConstructor
     @Data
-    public static class FileConfig {
+    public static class FileConfig implements Serializable{
         private String inputRootPath;
         private String outputRootPath;
         private String sourceRootPath;
@@ -30,27 +31,38 @@ public class Meta {
 
         @NoArgsConstructor
         @Data
-        public static class FileInfo {
+        public static class FileInfo implements Serializable {
             private String inputPath;
             private String outputPath;
             private String type;
             private String generateType;
+            private String condition;
+            private String groupKey;
+            private String groupName;
+            private List<FileInfo> files;
         }
     }
 
     @NoArgsConstructor
     @Data
-    public static class ModelConfig {
+    public static class ModelConfig implements Serializable{
         private List<ModelInfo> models;
 
         @NoArgsConstructor
         @Data
-        public static class ModelInfo {
+        public static class ModelInfo implements Serializable{
             private String fieldName;
             private String type;
             private String description;
             private Object defaultValue;
             private String abbr;
+            private String groupKey;
+            private String groupName;
+            private List<ModelInfo> models;
+            private String condition;
+            // 中间参数
+            // 该分组下所有参数拼接字符串
+            private String allArgsStr;
         }
     }
 }
